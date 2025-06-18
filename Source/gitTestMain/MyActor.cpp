@@ -6,11 +6,6 @@ AMyActor::AMyActor()
 	PrimaryActorTick.bCanEverTick = true;
 
 }
-void AMyActor::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
 
 void AMyActor::Tick(float DeltaTime)
 {
@@ -18,3 +13,9 @@ void AMyActor::Tick(float DeltaTime)
 
 }
 
+void AMyActor::BeginPlay()
+{
+	Super::BeginPlay();
+
+	UE_LOG(LogTemp, Log, TEXT("Written by other."));
+}
